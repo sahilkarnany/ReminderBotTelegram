@@ -2,42 +2,33 @@ ReminderBotTelegram
 
 This is a Telegram bot that allows you to set reminders for yourself or for groups.
 
-Installation
+Installation:
 
-    Clone the repository:
+1.Clone the repository:
 
-bash
+    git clone https://github.com/sahilkarnany/ReminderBotTelegram.git
 
-git clone https://github.com/sahilkarnany/ReminderBotTelegram.git
+2.Install the dependencies:
 
-    Install the dependencies:
+    pip install -r requirements.txt
 
-bash
+3.Create a Telegram bot and get the API token. You can follow the official Telegram documentation to create a new bot.
 
-pip install -r requirements.txt
+4.Copy the API token to the config.ini file.
 
-    Create a Telegram bot and get the API token. You can follow the official Telegram documentation to create a new bot.
+    [telegram]
+    token = YOUR_TELEGRAM_BOT_TOKEN_HERE
 
-    Copy the API token to the config.ini file.
+Usage:
 
-ini
+Run the main.py script to start the bot.
 
-[telegram]
-token = YOUR_TELEGRAM_BOT_TOKEN_HERE
+    python main.py
 
-Usage
+1.Open Telegram and search for your bot.
+2.Send the '/start' command to the bot to start using it.
 
-    Run the main.py script to start the bot.
-
-bash
-
-python main.py
-
-    Open Telegram and search for your bot.
-
-    Send the /start command to the bot to start using it.
-
-Commands
+Commands:
 
     /start: Start the bot and get a list of available commands.
     /help: Get help on how to use the bot.
@@ -46,9 +37,10 @@ Commands
     /delete: Delete a specific reminder by its ID.
     /deleteall: Delete all your current reminders.
 
-Contributing
+Contributing:
 
 Contributions are welcome! Please read the CONTRIBUTING.md file for more information on how to contribute.
-License
+
+License:
 
 This project is licensed under the MIT License. See the LICENSE.md file for details.
